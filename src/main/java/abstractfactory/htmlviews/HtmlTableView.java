@@ -12,7 +12,7 @@ public class HtmlTableView extends TableView {
 
     private final String TABLE_OT = "<table>\n";
     private final String TABLE_CT = "</table>";
-    private final String ROW_OT = "<tr>";
+    private final String ROW_OT = "\t<tr>";
     private final String ROW_CT = "</tr>\n";
     private final String CELL_OT = "<td>";
     private final String CELL_CT = "</td>";

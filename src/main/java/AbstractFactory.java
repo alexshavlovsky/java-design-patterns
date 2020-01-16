@@ -3,6 +3,7 @@ import abstractfactory.TableView;
 import abstractfactory.ViewFactory;
 import abstractfactory.htmlviews.HtmlViewFactory;
 import abstractfactory.textviews.TextViewFactory;
+import abstractfactory.xmlviews.XmlViewFactory;
 
 import java.util.List;
 
@@ -25,18 +26,32 @@ public class AbstractFactory {
         ListView list = factory.createListView(listModel);
         TableView table = factory.createTableView(tableModel);
 
+        // TEXT VIEW
         print("===Text representation===");
         print("===List===");
         print(list);
         print("===Table===");
         print(table);
 
+        // HTML VIEW
         factory = HtmlViewFactory.getInstance();
         list = factory.createListView(listModel);
         table = factory.createTableView(tableModel);
 
         print("");
         print("===HTML representation===");
+        print("===List===");
+        print(list);
+        print("===Table===");
+        print(table);
+
+        // XML VIEW
+        factory = XmlViewFactory.getInstance();
+        list = factory.createListView(listModel);
+        table = factory.createTableView(tableModel);
+
+        print("");
+        print("===XML representation===");
         print("===List===");
         print(list);
         print("===Table===");

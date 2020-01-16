@@ -12,7 +12,7 @@ public class HtmlListView extends ListView {
 
     private final String LIST_OT = "<ol>\n";
     private final String LIST_CT = "</ol>";
-    private final String ITEM_OT = "<li>";
+    private final String ITEM_OT = "\t<li>";
     private final String ITEM_CT = "</li>\n";
 
     @Override
